@@ -24,6 +24,10 @@ export const AppContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    background: #fff;
+    padding: 20px;
+    height: 100%;
+    margin: 0;
   }
 `
 export default App;

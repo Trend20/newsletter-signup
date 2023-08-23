@@ -30,6 +30,7 @@ export const UpdatesContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    padding-top: 10px;
   }
 `
 
@@ -45,6 +46,7 @@ export const UpdateSpan = styled.div`
 
   @media (max-width: 768px) {
    width: 100%;
+    padding-top: 10px;
   }
 `
 

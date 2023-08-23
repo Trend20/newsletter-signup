@@ -36,6 +36,7 @@ export const MainPageContainer = styled.div `
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 `
 
@@ -50,10 +51,16 @@ export const MainTextContainer = styled.div`
     font-weight: 700;
     font-size: 3rem;
     margin-top: 50px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 
   @media (max-width: 768px) {
    width: 100%;
+    padding: 0;
   }
 `
 
@@ -66,6 +73,11 @@ export const MainImageContainer = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      //height: 300px;
+    }
   }
   @media (max-width: 768px) {
     width: 100%;
