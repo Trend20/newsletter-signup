@@ -60,6 +60,11 @@ export const ButtonElement = styled.button`
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  
+  &:hover{
+    background: linear-gradient(to right, #d62a4a, hsl(4, 100%, 67%));
+    transition: ease 0.3s;
+  }
 `
 
 export default Subscribe;
