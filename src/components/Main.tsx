@@ -29,6 +29,14 @@ export const MainPageContainer = styled.div `
   height: 100%;
   border-radius: 30px;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const MainTextContainer = styled.div`
@@ -43,6 +51,10 @@ export const MainTextContainer = styled.div`
     font-size: 3rem;
     margin-top: 50px;
   }
+
+  @media (max-width: 768px) {
+   width: 100%;
+  }
 `
 
 export const MainImageContainer = styled.div`
@@ -54,6 +66,9 @@ export const MainImageContainer = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `
 export default Main;

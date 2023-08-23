@@ -21,6 +21,10 @@ export const AppContainer = styled.div`
   align-items: center;
   padding: 100px;
   margin: 100px auto auto auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export default App;
 

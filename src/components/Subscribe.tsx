@@ -47,6 +47,10 @@ export const InputContainer = styled.div`
     opacity: .6;
     font-size: 16px;
   }
+
+  @media (max-width: 768px) {
+    
+  }
 `
 
 export const ButtonElement = styled.button`
@@ -64,6 +68,10 @@ export const ButtonElement = styled.button`
   &:hover{
     background: linear-gradient(to right, #d62a4a, hsl(4, 100%, 67%));
     transition: ease 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    
   }
 `
 

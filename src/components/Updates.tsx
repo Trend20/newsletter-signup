@@ -27,6 +27,10 @@ export const UpdatesContainer = styled.div`
   flex-direction: column;
   width: 100%;
   padding-top: 30px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const UpdateSpan = styled.div`
@@ -37,6 +41,10 @@ export const UpdateSpan = styled.div`
   
   p{
     margin-left: 15px;
+  }
+
+  @media (max-width: 768px) {
+   width: 100%;
   }
 `
 
