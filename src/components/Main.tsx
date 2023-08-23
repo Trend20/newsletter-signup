@@ -35,19 +35,20 @@ export const MainTextContainer = styled.div`
     display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 30px;
   
   h1{
     display: flex;
     font-weight: 700;
     font-size: 3rem;
-    margin-top: 80px;
+    margin-top: 50px;
   }
 `
 
 export const MainImageContainer = styled.div`
     display: flex;
   flex-direction: column;
-  width: 50%;
+  //width: 50%;
   
   img{
     display: flex;
