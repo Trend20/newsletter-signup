@@ -8,7 +8,7 @@ const Main = (): JSX.Element =>{
     return (
         <MainPageContainer className="main">
             <MainTextContainer className="main-text">
-                <h1>Stay Updated!</h1>
+                <h1>Stay updated!</h1>
                 <Updates />
                 <Subscribe />
             </MainTextContainer>
@@ -24,8 +24,9 @@ export const MainPageContainer = styled.div `
     display: flex;
   background: #fff;
   padding: 20px;
-  width: 60%;
   border: none;
+  width: 80%;
+  height: 100%;
   border-radius: 30px;
   justify-content: space-between;
 `
@@ -34,11 +35,24 @@ export const MainTextContainer = styled.div`
     display: flex;
   flex-direction: column;
   width: 50%;
+  
+  h1{
+    display: flex;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 80px;
+  }
 `
 
 export const MainImageContainer = styled.div`
     display: flex;
   flex-direction: column;
   width: 50%;
+  
+  img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 `
 export default Main;

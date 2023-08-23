@@ -15,11 +15,12 @@ const App = (): JSX.Element =>{
 export const AppContainer = styled.div`
     display: flex;
   background: hsl(234, 29%, 20%);
-  min-height: 100vh;
-  width: 100%;
+  width: 70%;
+  height: 800px;
   justify-content: center;
   align-items: center;
   padding: 100px;
+  margin: 100px auto auto auto;
 `
 export default App;
 

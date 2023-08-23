@@ -1,22 +1,43 @@
 import React from 'react';
 import ListIcon from '../assets/images/icon-list.svg'
+import styled from "styled-components";
 
 const Updates = (): JSX.Element =>{
     return (
-        <div className="main">
-            <span>
+        <UpdatesContainer className="updates">
+            <UpdateSpan>
                 <img src={ListIcon} alt="icon"/>
                 <p>Product discovery and building what matters.</p>
-            </span>
-            <span>
+            </UpdateSpan>
+            <UpdateSpan>
                 <img src={ListIcon} alt="icon"/>
                 <p>Measuring to ensure updates are a success.</p>
-            </span>
-            <span>
+            </UpdateSpan>
+            <UpdateSpan>
                 <img src={ListIcon} alt="icon"/>
                 <p>Add much more.</p>
-            </span>
-        </div>
+            </UpdateSpan>
+        </UpdatesContainer>
     );
 }
+
+// styles
+export const UpdatesContainer = styled.div`
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+`
+
+export const UpdateSpan = styled.div`
+    display: flex;
+  width: 100%;
+  align-items: center;
+ padding-top: 18px;
+  
+  p{
+    margin-left: 15px;
+  }
+`
+
 export default Updates;
