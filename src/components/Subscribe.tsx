@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import styled from "styled-components";
 
-const Subscribe = (): JSX.Element =>{
+type Props = {
+    email: string,
+    setEmail: any,
+    handleSubmit: any,
+}
+
+const Subscribe = ({email, setEmail, handleSubmit}: Props): JSX.Element =>{
     return (
         <SubscribeContainer className="subscribe">
-            <FormContainer id='sub-form'>
+            <FormContainer id='sub-form' onSubmit={handleSubmit}>
                 <InputContainer className="input">
                     <label htmlFor="emailAddress">Email Address</label>
-                    <input type="text" placeholder='email@company.com'/>
+                    <input type="text" placeholder='email@company.com' value={email} onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} />
                 </InputContainer>
                 <ButtonElement>Subscribe to monthly newsletter</ButtonElement>
             </FormContainer>

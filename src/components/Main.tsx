@@ -1,16 +1,23 @@
-import React from 'react';
+import {FormEvent, useState} from 'react';
 import MainImg from '../assets/images/illustration-sign-up-desktop.svg'
 import Updates from "./Updates";
 import Subscribe from "./Subscribe";
 import styled from "styled-components";
+import Swal from 'sweetalert2'
 
 const Main = (): JSX.Element =>{
+    const [email, setEmail] = useState<string>('')
+    const [error, setError] = useState<string>('')
+
+    const handleSubmit = (e:FormEvent) =>{
+        e.preventDefault()
+    }
     return (
         <MainPageContainer className="main">
             <MainTextContainer className="main-text">
                 <h1>Stay updated!</h1>
                 <Updates />
-                <Subscribe />
+                <Subscribe email={email} setEmail={setEmail} handleSubmit={handleSubmit} />
             </MainTextContainer>
             <MainImageContainer className="main-image">
                 <img src={MainImg} alt="main-image"/>
@@ -63,7 +70,6 @@ export const MainTextContainer = styled.div`
     padding: 0;
   }
 `
-
 export const MainImageContainer = styled.div`
     display: flex;
   flex-direction: column;
