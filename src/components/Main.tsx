@@ -3,7 +3,7 @@ import MainImg from '../assets/images/illustration-sign-up-desktop.svg'
 import Updates from "./Updates";
 import Subscribe from "./Subscribe";
 import styled from "styled-components";
-import Swal from 'sweetalert2'
+// import Swal from 'sweetalert2'
 
 const Main = (): JSX.Element =>{
     const [email, setEmail] = useState<string>('')
@@ -28,14 +28,15 @@ const Main = (): JSX.Element =>{
 
 // styles
 export const MainPageContainer = styled.div `
-    display: flex;
+  display: flex;
   background: #fff;
-  padding: 20px;
   border: none;
-  width: 80%;
+  width: 100%;
   height: 100%;
+  padding: 20px;
   border-radius: 30px;
   justify-content: space-between;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -48,7 +49,7 @@ export const MainPageContainer = styled.div `
 `
 
 export const MainTextContainer = styled.div`
-    display: flex;
+  display: flex;
   flex-direction: column;
   width: 50%;
   padding: 30px;
@@ -71,7 +72,7 @@ export const MainTextContainer = styled.div`
   }
 `
 export const MainImageContainer = styled.div`
-    display: flex;
+  display: flex;
   flex-direction: column;
   //width: 50%;
   

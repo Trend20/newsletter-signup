@@ -6,21 +6,22 @@ import styled, {IStyledComponent} from "styled-components";
 const App = (): JSX.Element =>{
   return (
     <AppContainer className="app">
-      <Main />
+      <div className="content">
+          <Main />
+      </div>
     </AppContainer>
   );
 }
 
 // styles
 export const AppContainer = styled.div`
-    display: flex;
-  background: hsl(234, 29%, 20%);
-  width: 70%;
-  height: 800px;
+  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   padding: 100px;
-  margin: 100px auto auto auto;
+  overflow: hidden !important;
 
   @media (max-width: 768px) {
     width: 100%;
